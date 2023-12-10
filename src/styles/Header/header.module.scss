@@ -1,0 +1,115 @@
+$font-size-primary: 14px;
+$font-family-primary: var(Poppins, Helvetica, Arial, sans-serif);
+$font-weight-primary: 500;
+$font-color: white;
+
+.header_container {
+    position: fixed;
+    display: block;
+    z-index: 10;
+    width: 100%;
+
+    .header_wrapper {
+        margin: 0 0;
+        margin: auto;
+        max-width: 1425px;
+        display: flex;
+        align-items: center;
+    }
+
+    .menu_wrapper {
+        display: flex;
+        list-style: none;
+        margin: auto;
+        margin-right: 0;
+    }
+
+    .menu_icon {
+        margin-right: 10px;
+        padding: 30px 0px;
+    }
+
+    .sub_menu_container {
+        position: relative;
+        z-index: 10;
+        padding: 30px 0px;
+
+        .sub_menu_detail_container {
+            display: flex;
+            position: absolute;
+            list-style: none;
+            background-color: white;
+            flex-direction: column;
+            white-space: nowrap;
+            border-radius: 5%;
+            top: 80%;
+        }
+
+        .sub_menu_detail_text {
+            font-size: $font-size-primary;
+            font-family: $font-family-primary;
+            font-weight: $font-weight-primary;
+            color: black;
+            padding: 10px 0px;
+            margin: 0px 20px;
+            border-bottom: 1px solid #ccc;
+        }
+
+        .sub_menu_detail_text:hover {
+            transition: 0.5s;
+            color: red;
+        }
+    }
+
+    .sub_menu_detail_container_2 {
+        display: flex;
+        position: absolute;
+        list-style: none;
+        background-color: white;
+        flex-direction: column;
+        white-space: nowrap;
+        border-radius: 5%;
+        top: 0;
+        left: 100%;
+    }
+
+    .sub_menu_link {
+        display: flex;
+        padding-right: 20px;
+
+        .sub_menu_text {
+            font-size: $font-size-primary;
+            font-family: $font-family-primary;
+            font-weight: $font-weight-primary;
+            color: $font-color;
+            margin-right: 5px;
+        }
+
+        .sub_menu_icon {
+            margin-top: 4px;
+            font-size: 10px;
+        }
+
+
+    }
+
+    .header_cart {
+        position: relative;
+        padding: 30px 0px;
+
+        .header_cart_number {
+            position: absolute;
+            top: 22px;
+            right: -8px;
+            display: flex;
+            border-radius: 50%;
+            width: 15px;
+            height: 15px;
+            align-items: center;
+            justify-content: center;
+            background-color: red;
+            font-size: 11px;
+        }
+    }
+
+}
