@@ -1,0 +1,49 @@
+.sidebar_trigget {
+    display: none;
+}
+
+.sidebar_trigger:checked~.overlay {
+    display: block;
+    z-index: 2;
+}
+
+.sidebar_trigger:checked~.sidebar_container {
+    transform: translateX(0%);
+    opacity: 1;
+    z-index: 2;
+}
+
+.sidebar_container {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 360px;
+    background-color: white;
+    max-width: 100%;
+    transform: translateX(-100%);
+    opacity: 0;
+    transition: transform linear 0.2s, opacity linear 0.2s;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    // background-color: rgba(0, 0, 0, 0.3);
+    background-color: green;
+    display: none;
+    animation: fadeIn linear 0.3s;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
