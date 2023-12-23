@@ -1,9 +1,6 @@
-'use client'
-
 import Image from 'next/image'
 import Link from 'next/link'
 import styles from '@/styles/Header/header.module.scss'
-import styles_sidebar from '@/styles/Header/sidebar.module.scss'
 import Logo from '@/assets/icons/logo@2x_white.png'
 import { IoMdMenu } from "react-icons/io";
 import { FaChevronDown } from "react-icons/fa";
@@ -39,7 +36,6 @@ const Header = () => {
                         </li>
                     ))}
                     <label htmlFor='sidebar-trigger' className={styles.menu_icon}>
-                        <input type='checkbox' className={styles_sidebar.sidebar_trigger} id='sidebar-trigger' />
                         <IoMdMenu />
                     </label>
                     <Cart number={4} />

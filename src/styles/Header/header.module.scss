@@ -1,10 +1,4 @@
-@import 'https://fonts.googleapis.com/css?family=Poppins:500';
-
-$font-size-primary: 13px;
-$font-family-primary: Poppins, Helvetica, Arial, sans-serif;
-$font-weight-primary: 500;
-$font-color-primary: white;
-$font-color-secondary: black;
+@import 'font_settings';
 
 $phone-width: 1023px;
 
@@ -35,12 +29,12 @@ $phone-width: 1023px;
 .menu_icon {
     margin-right: 10px;
     padding: 27px 0px;
+    cursor: pointer;
 }
 
 .sub_menu_container {
     position: relative;
     z-index: 1;
-    padding: 27px 0px;
 
     .sub_menu_detail_container {
         display: none;
@@ -77,7 +71,7 @@ $phone-width: 1023px;
 
         &:hover {
             transition: 0.5s;
-            color: red;
+            color: $font-color-hover-primary;
         }
     }
 }
@@ -92,7 +86,7 @@ $phone-width: 1023px;
 
         .sub_menu_detail_text {
             transition: 0.5s;
-            color: red;
+            color: $font-color-hover-primary;
         }
     }
 }
@@ -111,7 +105,8 @@ $phone-width: 1023px;
 
 .sub_menu_link {
     display: flex;
-    padding-right: 20px;
+    padding: 27px 20px 27px 0;
+    margin-right: 5px;
 
     .sub_menu_text {
         font-size: $font-size-primary;
@@ -168,6 +163,7 @@ $phone-width: 1023px;
         display: none;
     }
 }
+
 @media (max-width: 1100px) {
     .header_wrapper {
         padding: 0 30px;
